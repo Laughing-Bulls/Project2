@@ -4,8 +4,8 @@
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    border: solid rgba(0,0,0,.4);
-    background-color: rgba(255,255,255,.2);
+    border: solid rgba(0,0,255,.4);
+    background-color: rgba(0,0,255,.2);
     padding: 0 1rem 0 1rem;
     width: 20%;
 }
@@ -23,8 +23,9 @@
 }
 
 .headerContainer .pagetitle {
+    font-family: "Brush Script MT", cursive;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 4rem;
     align-items: center;
     min-width: 80%;
     padding-left: 1rem;
@@ -268,5 +269,6 @@ h3{
 }
 
 footer{
-    background: rgba(255,255,255,.4)
+    background: rgba(255,255,255,.4);
+    font-family: sans-serif;
 }
