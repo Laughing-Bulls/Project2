@@ -1,35 +1,40 @@
 body {
-    margin: 40px;
+    margin: 30px;
+    padding: 10px;
 }
 
+/* This is from gridbyexample */
 .wrapperbox {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px  ;
-    grid-template-rows: [row] auto [row] auto [row] ;
+    grid-gap: 2px;
+    grid-template-columns: [col] 33% [col] 33% [col] 30%;
+    grid-template-rows: [row] auto [row] auto [row];
     background-color: #fff;
     color: #444;
 }
 
 .box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
+
+    border-radius: 15px;
     padding: 20px;
     font-size: 150%;
 
 }
 
 .c {
+    background-color: #000080;
+    color: #fff;
     grid-column: col / span 3;
-    grid-row: row ;
+    grid-row: row;
 }
 .d {
-    grid-column: col 4 / span 2 ;
+    background-color: #000080;
+    color: #fff;
+    grid-column: col 1 / span 3 ;
     grid-row: row ;
 }
 .e {
-    grid-column: col ;
+    grid-column: col 1/ span 3;
     grid-row: row 2 ;
 }
 .f {
@@ -52,9 +57,27 @@ body {
     grid-row: row 5;
 }
 
+.gridpic {
+    grid-column: col 1 / span 2 ;
+    grid-row: row ;
+
+}
+
+.gridpic > img {
+    object-fit: cover;
+    width:100%;
+    max-height: 100%;
+}
+
+.gridpiclabel {
+    grid-column: col 3 / span 1 ;
+    grid-row: row ;
+}
+
 
 .headerContainer .primarylinks{
     font-size: 1rem;
+    font-family: sans-serif;
     font-weight: bolder;
     text-align: center;
     align-items: center;
@@ -156,6 +179,8 @@ body {
     border: solid rgba(0,0,0,.4);
     color: black;
     padding: .8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: rgba(0,0,0,.1);
     width: max-content;
     margin-right: .75rem;
@@ -221,7 +246,7 @@ footer
 
 .wrapper .box {
     border-radius: .5rem;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(0, 0, 255, .5);
     place-self: center;
     text-align: center;
 
@@ -247,7 +272,6 @@ p{
     grid-column: 2;
     grid-row: all;
     width: 100%;
-    padding: .5rem;
     margin-left: 1rem;
     font-size: 1.25rem;
 }
@@ -310,6 +334,21 @@ h3{
 .wrapper .box .leftSideContentbar{
     grid-column: 1;
     border-right: 5px double black;
+}
+
+.refer{
+    text-indent: 30px;
+    background: rgba(255,255,255,.4);
+    font-family: sans-serif;
+    font-size: small;
+}
+
+dt{
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-style: single;
+    color: navy;
+    text-underline: navy;
 }
 
 footer{
