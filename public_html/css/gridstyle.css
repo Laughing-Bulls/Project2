@@ -60,7 +60,6 @@ body {
 .gridpic {
     grid-column: col 1 / span 2 ;
     grid-row: row ;
-
 }
 
 .gridpic > img {
@@ -69,11 +68,61 @@ body {
     max-height: 100%;
 }
 
-.gridpiclabel {
-    grid-column: col 3 / span 1 ;
-    grid-row: row ;
+.gridpic2 {
+    grid-column: col 1 / span 2 ;
+    grid-row: row 1;
 }
 
+.gridpic2 > img {
+    object-fit: contain;
+    width:100%;
+}
+
+.gridpic3 {
+    grid-column: col 1 / span 2 ;
+    grid-row: row 1;
+    grid-template-rows: auto 1fr auto;
+}
+
+.gridpic3 > img {
+    object-fit: none;
+    width:800px;
+    height: 710px;
+}
+
+.gridpic4 {
+    grid-column: col 1 / span 2 ;
+    grid-row: row 2;
+    grid-template-rows: auto 1fr auto;
+}
+
+.gridpic4 > img {
+    object-fit: none;
+    width:800px;
+    height: 550px;
+}
+
+.gridpic5 {
+    grid-column: col 1 / span 2 ;
+    grid-row: row;
+    grid-template-rows: auto 1fr auto;
+}
+
+.gridpic5 > img {
+    object-fit: none;
+    width:800px;
+    height: 500px;
+}
+
+.gridpiclabel {
+    grid-column: col 3 / span 1 ;
+    grid-row: row;
+}
+
+.gridpiclabel2 {
+    grid-column: col 3 / span 1 ;
+    grid-row: row 2;
+}
 
 .headerContainer .primarylinks{
     font-size: 1rem;
