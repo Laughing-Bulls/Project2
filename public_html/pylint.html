@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/gridstyle.css">
+    <title>Pylint Tutorial</title>
+    <meta name="description"
+          content="Pylint tutorial">
+</head>
+
+<body>
+
+<div class="headerContainer">
+    <div class="headerContainer pagetitle banner">
+        <span style="color: white">Best Practices for Novice Programmers</span>
+    </div>
+
+    <div class="headerContainer primarylinks" style="float: right; background-image: url('images/banner_image.jpg')">
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">
+                Quick Access &#9660;
+            </button>
+            <div class="dropdown-content">
+                <a href="https://github.com/Laughing-Bulls/Calculator/tree/part5adjustments">Calculator Code</a>
+                <a href="commands.html">Useful Commands</a>
+                <a href="oop.html">OOP Principles</a>
+                <a href="solid.html">SOLID Design</a>
+                <a href="aaa.html">AAA Testing</a>
+                <a href="pylint.html">Using Pylint</a>
+                <a href="glossary.html">Glossary</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 style="width:100%;font-size: 2.5rem;text-align: center;padding:inherit">
+    <br>Tutorial for Using Pylint
+</h2>
+
+<div class="wrapperbox">
+    <div class="box d">WHAT IS PYLINT?</div>
+    <div class="box e">Pylint is a programming tool that checks for errors in your Python code. It enforces Python
+        coding standards and looks for certain types of error. Pylint also can suggest how blocks may be refactored and
+        offer feedback about the code's complexity.
+    </div>
+
+</div>
+<div class="wrapperbox">
+    <div class="box d">HOW DOES PYLINT WORK</div>
+    <div class="box e">Pylint analyzes your code and displays messages about it. It also displays statistics about the
+        number of warnings and errors found in your Python files. These messages are classified under categories such as
+        errors and warnings. Finally, the code is given an overall score, based on the number and severity of the
+        warnings and errors.
+    </div>
+</div>
+<div class="wrapperbox">
+    <div class="box d">WHY USE PYLINT?</div>
+    <div class="box e">In addition to helping experienced programmers track down coding errors, beginners can learn
+        coding syntax and become a more aware programmer. Python uses recommended programming styles, which is captured
+        in PEP 8, the "Style Guide for Python Code". Pylint can be a quick and easy way of seeing if your code adheres
+        to PEP 8 and easily recognizable to other potential users.
+    </div>
+</div>
+<div class="wrapperbox">
+    <div class="box d">HOW DO YOU START?</div>
+    <div class="box e">Install Python with
+        <br><b>$ pip install pylint</b>
+        <br>Choose a program to examine. Try the command:
+        <br><b>$ pylint [myfile].py</b>
+        <br>You can get a list of helpful features with
+        <br><b>$ pylint --long-help</b>
+
+    </div>
+</div>
+
+<div class="wrapperbox">
+    <div class="box d">WHAT DOES THE EVALUATION OUTPUT LOOK LIKE?</div>
+    <div class="box e"><b>“Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)”</b>
+    </div>
+
+</div>
+<div class="wrapperbox">
+    <div class="box d">WHAT KINDS OF MESSAGES WILL PYLINT SHOW?
+    </div>
+    <div class="box e">
+        <ul>
+            <li>(C) Convention - for programming standard violation</li>
+            <li>(R) Refactor - for bad code smell</li>
+            <li>(W) Warning - for python specific problems</li>
+            <li>(E) Error - for probable bugs in the code</li>
+            <li>(F) Fatal - for an error occurred which prevented pylint from doing further processing</li>
+        </ul>
+    </div>
+</div>
+
+<div class="wrapperbox">
+    <div class="box d">HOW CAN YOU CONFIGURE PYLINT?</div>
+    <div class="box e">Pylint uses several checkers. You can disable specific checkers or some of its messages or
+        categories by specifying --disable=[symbol]. If you want to enable only some checkers or some message symbols,
+        use --disable=all then --enable=[symbol] with [symbol] being a comma-separated list of checker names and message
+        symbols.
+    </div>
+</div>
+
+<div class="wrapperbox">
+    <div class="box d">CAN YOU MAKE A CONFIGURATION FILE?</div>
+    <div class="box e">You can specify preferred options for your setup with a configuration file to specify default
+        values. You can specify this configuration file on the command line using the --rcfile option. Or Pylint can use
+        a (hidden) configuration file called:<b> .pylintrc </b>
+    </div>
+</div>
+
+<div class="wrapperbox">
+    <div class="box d">WHAT DO YOU DO NOW?</div>
+    <div class="box e">Start working through the Pylint errors! It will display syntax, linting, and other errors. Work
+        through them one by one, repeating pylint as you go. Work until all errors are corrected, or if it highlights
+        something that you don’t want to change, just disable that error.
+    </div>
+</div>
+
+<footer>
+    <br>
+    <span style="text-align: left">&#x00A9 <a
+            href="https://github.com/Laughing-Bulls/Calculator.git"> S. Daniel</a> </span>
+</footer>
+</body>
+</html>

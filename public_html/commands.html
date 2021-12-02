@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/gridstyle.css">
+    <title>Commands</title>
+    <meta name="description"
+          content="Useful Commands">
+
+</head>
+
+<body>
+
+<div class="headerContainer">
+    <div class="headerContainer pagetitle banner">
+        <span style="color: white">Best Practices for Novice Programmers</span>
+    </div>
+
+    <div class="headerContainer primarylinks" style="float: right; background-image: url('images/banner_image.jpg')">
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">
+                Quick Access &#9660;
+            </button>
+            <div class="dropdown-content">
+                <a href="https://github.com/Laughing-Bulls/Calculator/tree/part5adjustments">Calculator Code</a>
+                <a href="commands.html">Useful Commands</a>
+                <a href="oop.html">OOP Principles</a>
+                <a href="solid.html">SOLID Design</a>
+                <a href="aaa.html">AAA Testing</a>
+                <a href="pylint.html">Using Pylint</a>
+                <a href="glossary.html">Glossary</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 style="width:100%;font-size: 2.5rem;text-align: center;padding:inherit">
+    <br>Useful Commands for Linux, vi, Git, and Docker
+</h2>
+
+<div class="wrapperbox">
+    <div class="box d">LINUX COMMANDS</div>
+    <div class="box e"><b>Run from the command line, these commands provide a helpful text interface to your computer</b></div>
+    <div class="box h">
+        <ul>
+            <li>help – when included after a [command], displays information about the command
+            <li>pwd – displays present working directory
+            <li>ls – lists directories and files at current directory [-l -a (hidden files)]
+            <li>cd – changes directory. EX: cd c:/user/S/IS601, cd ~ (home)
+            <li>mkdir – makes a new directory
+            <li>rmdir – removes/deletes an empty directory
+            <li>rm – removes/deletes a directory and its files
+            <li>touch – creates a new named file
+            <li>cp – copies a file to another designated directory
+            <li>mv - moves a file to another designated directory. Can also be used to rename a file
+            <li>locate – finds location of a file
+            <li>cat – displays file contents
+            <li>ping – checks connection to a server
+            <li>vi – starts the vi editor. Edit existing file with: vi [FileName]
+            <li>exit – exits the Linux terminal
+        </ul>
+    </div>
+</div>
+<br><br>
+<div class="wrapperbox">
+    <div class="box d">vi COMMANDS</div>
+    <div class="box e"><b>vi is a screen-oriented text editor used inside the Unix/Linux operating system</b></div>
+    <div class="box h">
+        <ul>
+            <li> i – insert mode for new text
+            <li> a – appends text
+            <li> o – [open] adds text to new line below
+            <li> [esc key] - ends or turns off current mode
+            <li> r – replaces character
+            <li> x – deletes character
+            <li> dw – deletes word
+            <li> dd – deletes line
+            <li> yy – copies line
+            <li> p – pastes line
+            <li> r [filename] - reads file and inserts at current line
+            <li> u – undo
+            <li> : [colon] - typing the colon symbol takes user back to the command prompt
+            <li> w – writes, or saves the current editing (add file name if new file)
+            <li> q – quits the editor
+            <li> wq – saves and quits the editor
+        </ul>
+    </div>
+</div>
+<br><br>
+<div class="wrapperbox">
+    <div class="box d">GIT COMMANDS</div>
+    <div class="box e"><b>Git is a version control system useful for tracking code changes and coordinating with others</b></div>
+    <div class="box h">
+        <ul>
+            <li>git config – sets the users name and email. EX: git config –global user.name “Scott Daniel”
+            <li> git remote –designates a server or url where remote files reside
+            <li>- -Add remote server with: git remote add origin [server/html address]
+            <li>- -Display current remote origin: git remote show origin
+            <li>- -Change remote location: git remote set-url origin [remote_url]
+            <li> git init – initializes a new repository
+            <li> git clone – creates a local working copy of a repository
+            <li> git branch – lists branches and highlights what branch the user is in
+            <li> git checkout – switches branches. EX: git checkout Master
+            <li>- -Can make a new branch and switch to it with: git checkout -b [NewContentBranch]
+            <li> git status – will display the current working branch, as well as status of files changed
+            <li> git add – adds this file to git’s version control
+            <li> git commit – makes change.
+            <li>- -Can add a message to the commit with: git commit -m “Task: created Help page”
+            <li>- -Can commit any file added with git add using: git commit -a
+            <li> git diff – displays the merge conflicts
+            <li> git merge – merges named branch changes into the current branch. EX: git merge [NewContentBranch]
+            <li> git push – uploads user changes to a branch (e.g., to master branch in GitHub)
+            <li>- -Can send all branches to the remote server with: git push --all [origin]
+            <li> git pull – downloads changes from the remote server
+            <li> git remote add origin
+            <li> git remote set-url origin
+
+        </ul>
+    </div>
+</div>
+<br><br>
+<div class="wrapperbox">
+
+    <div class="box d">DOCKER COMMANDS</div>
+    <div class="box e"><b>Docker uses virtualization to deliver software inside self-sufficient containers</b></div>
+    <div class="box h">
+        <ul>
+            <li> docker ps - what containers are running; shows container ID
+            <li> docker build -t [newcontainername] .[dot]
+            <li> docker build .[dot] - builds in home file directory path to docker file (current dir)
+            <li> docker compose up - builds a container (based on a script)
+            <li> docker stop - stops the container
+            <li> docker rm - remove the container
+            <li> docker run -d -p 80:80 [imagename]
+            <li>- -d is detached
+            <li>- -p map to port
+            <li>- -dp is same
+            <li>- -w /[app] - sets working directory to “app”
+            <li> docker image ls - lists images
+            <li> docker tag [name] [username/name] - gives the image a new name with docker id
+            <li> docker push [username/name] - if no tag, the default is “latest”
+            <li> docker exec [containerID> cat [data.txt]
+            <li> docker logs -f [containerID] - watch the logs
+            <li> docker network create [todo-app] - creates network
+            <li> docker scan [imagename] - security scanning
+            <li> docker compose - define and store multi-container apps.
+        </ul>
+    </div>
+
+</div>
+
+
+<footer>
+    <br>
+    <span style="text-align: left">&#x00A9 <a
+            href="https://github.com/Laughing-Bulls/Calculator.git"> S. Daniel</a> </span>
+</footer>
+</body>
+</html>

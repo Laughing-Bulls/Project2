@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/gridstyle.css">
+    <title>SOLID</title>
+    <meta name="description"
+          content="SOLID Object Oriented Design">
+
+</head>
+
+<body>
+<div class="headerContainer">
+    <div class="headerContainer pagetitle banner">
+        <span style="color: white">Best Practices for Novice Programmers</span>
+    </div>
+
+    <div class="headerContainer primarylinks" style="float: right; background-image: url('images/banner_image.jpg')">
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">
+                Quick Access &#9660;
+            </button>
+            <div class="dropdown-content">
+                <a href="https://github.com/Laughing-Bulls/Calculator/tree/part5adjustments">Calculator Code</a>
+                <a href="commands.html">Useful Commands</a>
+                <a href="oop.html">OOP Principles</a>
+                <a href="solid.html">SOLID Design</a>
+                <a href="aaa.html">AAA Testing</a>
+                <a href="pylint.html">Using Pylint</a>
+                <a href="glossary.html">Glossary</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="article">
+    <h2 style="width:100%;font-size: 2.5rem;text-align: center;padding:inherit">
+        <br>SOLID Object Oriented Design
+    </h2>
+    <h3 style="width:100%;font-size: 1.5rem;text-align: left;padding:inherit">
+        SOLID is the abbreviation for a set of design principles created for object-oriented languages. Using SOLID
+        principles leads to simple, robust and updatable programming code. Each letter stands for a principle in
+        software development:
+    </h3>
+    <br>
+    <div id="pageWrapper">
+        <article class="box c">
+            <h1>
+                S - Single Responsibility Principle
+            </h1>
+            <img src="images/letter-s.png" alt="png image of the letter S">
+
+            <p>
+                "There should never be more than one reason for a class to change."<br><br>
+                This principle means that each class is responsible for only one thing. If a class has more than one
+                responsibility, it becomes coupled, and changes to one responsibility results in a modification of other
+                responsibilities. It also helps with organizing your code. The Façade pattern is a useful layer class
+                that aggregates all related methods.tract class, and an abstract method can be used as a blueprint to
+                create methods for child
+                classes.
+            </p>
+        </article>
+
+        <div class="wrapperbox">
+            <div class="box gridpic">
+                <img src="images/inherit-screen.png" alt="Screenshot of code">
+            </div>
+            <div class="box gridpiclabel">
+                <p>In the Python Calculator program, this principle is revealed in the Addition class, which only
+                    performs a single function for the calculator. </p>
+            </div>
+        </div>
+        <div class="refer">
+            Click <a href="https://github.com/Laughing-Bulls/Calculator/blob/main/calc/calculations/addition.py">
+            here</a> to access the source code.
+            <br>
+            <br>
+        </div>
+
+        <article class="box c">
+            <h1>
+                O - Open-Closed Principle
+            </h1>
+            <img src="images/letter-o.jpg" alt="jpg image of the letter O">
+            <p>
+                "Software entities ... should be open for extension, but closed for modification."<br><br>
+                Classes and other entities should be open for extension, but closed for modification. You should be able
+                to add functionality, without touching existing code for the class. This helps to stop you from
+                modifying (and potentially damaging) existing code. One way this can be achieved is with abstraction.
+                Once the base class is closed for modification, additions and changes can be done through subclasses.
+
+        </article>
+
+        <div class="wrapperbox">
+            <div class="box gridpic">
+                <img src="images/o-screen.png" alt="Screenshot of code">
+            </div>
+            <div class="box gridpiclabel">
+                <p>In the Python Calculator program, this principle is revealed in the Calculator class, which itself is
+                    a facade. It does nothing itself, only calling other functions to do the work.</p>
+            </div>
+        </div>
+        <div class="refer">
+            Click <a href="https://github.com/Laughing-Bulls/Calculator/blob/main/calc/calculator.py">
+            here</a> to access the source code.
+            <br>
+            <br>
+        </div>
+
+        <article class="box c">
+            <h1>
+                L - Liskov Substitution Principle
+            </h1>
+            <img src="images/letter-l.jpg" alt="jpg image of the letter L">
+            <p>
+                "Functions that use pointers or references to base classes must be able to use objects of derived
+                classes without knowing it."<br><br>
+
+                This principle states that subclasses should be replaceable with their parent class. In other words,
+                objects should be replaceable with instances of their base types without altering the functionality of
+                the program. In this way, you should be able to use a class’s subtype indistinguishably, without
+                compromising its expected behavior. Users are therefore isolated from any changes in class hierarchy.
+                One core trait is polymorphism.
+            </p>
+        </article>
+
+        <div class="wrapperbox">
+            <div class="box gridpic">
+                <img src="images/inherit-screen.png" alt="Screenshot of code">
+            </div>
+            <div class="box gridpiclabel">
+                <p>In the Python Calculator program, Addition is just one child class of the Calculation class. The
+                    instantiation of the object is handled by its parent. </p>
+            </div>
+        </div>
+        <div class="refer">
+            Click <a href="https://github.com/Laughing-Bulls/Calculator/blob/main/calc/calculations/addition.py">
+            here</a> to access the source code.
+            <br>
+            <br>
+        </div>
+
+        <article class="box c">
+            <h1>
+                I - Interface Segregation Principle
+            </h1>
+            <img src="images/letter-i.png" alt="png image of the letter I">
+            <p>
+                “Many client-specific interfaces are better than one general-purpose interface.”<br><br>
+                This principle ensures that users don’t have to rely on methods they don’t use. Segregation means
+                keeping things separate. One way of doing this is with separation through multiple inheritance. This
+                principle addresses the disadvantages of implementing big interfaces. It also makes it easier for you to
+                understand, test and implement your code.
+
+            </p>
+        </article>
+
+        <div class="wrapperbox">
+            <div class="box gridpic">
+                <img src="images/i-screen.png" alt="Screenshot of code">
+            </div>
+            <div class="box gridpiclabel">
+                <p>In the Python Calculator program, the testing classes are broken in two: one for testing mathematical
+                    calculations, and one for testing methods associated with the Calculations history variable.</p>
+            </div>
+        </div>
+        <div class="refer">
+            Click <a href="https://github.com/Laughing-Bulls/Calculator/blob/main/tests/calculator_test.py">
+            here</a> to access the source code.
+            <br>
+            <br>
+        </div>
+
+        <article class="box c">
+            <h1>
+                D - Dependecy Inversion Principle
+            </h1>
+            <img src="images/letter-d.png" alt="png image of the letter D">
+            <p>
+                "Depend upon abstractions, [not] concretions."<br><br>
+                High-level modules shouldn’t depend on low-level modules. They both should depend on abstractions. You
+                can use interfaces to define high-level abstractions, which the details then implement. Eventually, your
+                program will be composed only of modules. To create specific functionality, you can use inheritance or
+                interfaces. Reorganize your dependencies to depend on these interfaces instead of only using concrete
+                classes.
+
+            </p>
+        </article>
+
+        <div class="wrapperbox">
+            <div class="box gridpic">
+                <img src="images/d-screen.png" alt="Screenshot of code">
+            </div>
+            <div class="box gridpiclabel">
+                <p>In the Python Calculator program, The parent class Calculation does not depend on its children, and
+                    unlimited functionality can be put under this class as a subclass.</p>
+            </div>
+        </div>
+        <div class="refer">
+            Click <a href="https://github.com/Laughing-Bulls/Calculator/blob/main/calc/calculations/calculation.py">
+            here</a> to access the source code.
+            <br>
+            <br>
+        </div>
+
+
+        <footer>
+            <br>
+            <span style="text-align: left">&#x00A9 <a
+                    href="https://github.com/Laughing-Bulls/Calculator.git"> S. Daniel</a> </span>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
